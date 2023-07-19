@@ -164,7 +164,7 @@ greeter(console.log);
 
 Here we declare a type alias `GreeterFn` that expects an argument of type `string` and has a return type of `void`. We then declare a `const` function that expects an argument of type `GreeterFn` and its implementation is such that it calls the function argument with a greeting string. We can then call that function supplying a function argument which in turn can expect a string argument, such as `console.log`. Note that since we didn't specify a return type for `greeter`, TypeScript assumes the return type to be `void`.
 
-When declaring a function type, the parameter name is required when declaring function type aliases. If we forget to add the name, TypeScript will assume the type to be `any` but it's also helpful in that it recognizes the common mistake of omitting the parameter name for the expected type. Suppose we have a `functionTypes.ts` file:
+When declaring a function type aliases, the parameter name is required. If we forget to add the name, TypeScript will assume the type to be `any` but it's also helpful in that it recognizes the common mistake of omitting the parameter name for the expected type. Suppose we have a `functionTypes.ts` file:
 
 ```ts
 type SomeFunction = (string) => void; // ✅ (but also ❌)
