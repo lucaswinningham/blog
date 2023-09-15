@@ -1,4 +1,4 @@
-# TypeScript
+# Basics
 
 TypeScript is a static typechecker for JavaScript programs. It's a tool that's run _before_ the code runs (static) and ensures that the types of the program are correct (typechecked).
 
